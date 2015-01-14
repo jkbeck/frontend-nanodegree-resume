@@ -190,17 +190,18 @@ projects.display();
 $('#mapDiv').append(googleMap);
 
 //Modal code for projects section. Code adapted from http://blog.raventools.com/create-a-modal-dialog-using-css-and-javascript/
+//Changed javascript to jquery
+
 function overlay(x) {
-  el = document.getElementById("project-modal");
-  el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
-  console.log(x);
+  $('#project-modal').css('visibility', 'visible');
   projects.modal(x);
   window.scroll(0, 250);
+  $('#main').addClass("blur");
 }
 
 //Close modal window and remove project divs to prepare for clicking a different project
 function overlayclose() {
-  el = document.getElementById("project-modal");
-  el.style.visibility = "hidden";
+  $('#project-modal').css('visibility', 'hidden');
+  $('#main').removeClass("blur"); 
   $("div.modal-entry").remove();
 }
