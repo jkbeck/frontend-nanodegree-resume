@@ -1,0 +1,241 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
+	background: #484848;
+}
+
+div#header li.flex-item {
+	float: left;
+	list-style-type: none;
+	width: 20%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.header-role {
+	color: #ffffff;
+	margin-left: 20px;
+}
+
+#header {
+	padding-bottom: 1%;
+}
+
+h3 {
+	padding-left: 0px;
+}
+
+h4 {
+	font-size: 16px;
+	padding: 10px 0px 0px 0px;
+	color: #27178d;
+}
+
+.welcome-message {
+	position: relative;
+	top: 4px;
+}
+
+ul#skills li.flex-item.progress {
+border: 1px white solid;
+}
+
+h3#skillsH3 {
+margin-top: 19px;
+padding-left: 226px;
+}
+
+.progress {
+	height: 20px;
+	border: 1px solid #ffffff;
+	background: #000000; 
+	z-index: 1;
+	color: #ffffff;
+	position: relative;
+}
+
+.progress-bar {
+	background: #F5A623;
+	width: 0%;
+	height: 20px;
+	z-index: 2;
+	position: relative;
+	top: -21px;
+}
+
+.progress-percent {
+	z-index: 3;
+	position: relative;
+	top: -1px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.date-text {
+	color: #666666;
+}
+
+.work-entry .date-text {
+	padding-top: 4px;
+}
+
+.work-entry:nth-of-type(even){
+	background: #cccccc;
+}
+
+.work-entry:nth-of-type(even) .date-text,
+.work-entry:nth-of-type(even) .location-text {
+	color: #000000;
+}
+
+#workExperience,
+#projects,
+#education {
+	background: #ffffff;
+	margin: 0% 5% 0% 5%;
+	border-radius: 7px;
+}
+
+#projects,
+#education {
+	margin-top: 15px;
+}
+
+#workExperience h2,
+#projects h2,
+#education h2 {
+	padding-left: 10px;
+	padding-right: 0px;
+}
+
+.work-entry,
+.education-entry {
+	padding: 5px 10px 5px 10px;
+}
+
+.work-entry h4,
+.education-entry {
+	margin-top: 0px;
+	font-weight: bold;
+}
+
+.education-entry .date-text {
+	padding: 5px 0px 5px 0px;
+}
+
+.ed-major {
+	width: 50%;
+	padding-bottom: 15px;
+}
+
+.education-entry a {
+	padding-bottom: 15px;
+}
+
+.project-entry {
+	width: 25%;
+	padding: 0px 0px 0px 0px;
+	float:left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 7px;
+	box-shadow: 1px 1px 1px #888888;
+
+}
+
+.project-entry:hover {
+	border: 1px solid #cccccc;
+	border-radius: 7px;
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.project-entry p {
+	margin-top: -10px;
+}
+.project-entry img {
+	width: 25%;
+}
+
+.project-entry img,
+.project-entry h3,
+.project-entry p {
+	float: left;
+}
+
+.project-entry h3 {
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.date-text,
+.project-entry p,
+.project-entry h3 {
+	width: 50%;
+}
+
+.project-entry .date-text {
+	padding-top: 2px;
+}
+
+#project-modal {
+     visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 200px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+ }
+
+#project-modal div#modal-content {
+     width:75%;
+     height:600px;
+     margin: 100px auto;
+     background-color: #fff;
+     border:1px solid #cccccc;
+     padding:15px;
+     text-align:center;
+     border-radius: 7px;
+}
+
+.modal-img {
+	width:25%;
+}
+
+div#closer {
+position: relative;
+left: 98%;
+top: -6px;
+border: 2px solid #000000;
+width: 24px;
+height: 23px;
+border-radius: 25px;
+padding-top: 1px;
+cursor: pointer;
+}
+
+div#map {
+	border-radius: 7px;
+}
+
+#mapDiv h2 {
+color: #F5AE23;
+}
+
+#letsConnect h2 {
+	color: #000000;
+}
+
+#footerContacts {
+	margin-bottom: 50px;
+}
