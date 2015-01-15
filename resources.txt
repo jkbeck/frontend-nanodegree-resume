@@ -1,0 +1,6 @@
+http://www.w3schools.com/
+http://api.jquery.com/
+http://nicolasgallagher.com/micro-clearfix-hack/
+http://blog.raventools.com/create-a-modal-dialog-using-css-and-javascript/
+http://stackoverflow.com/
+http://placekitten.com/
