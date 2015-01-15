@@ -54,7 +54,7 @@ var bio = {
 	 			};
 	 			for( i = 0; i < bio.skills.length; i++){
 	 				$('#skills').append('<li class="flex-item progress ' + bio.skills[i] +
-	 				 '"><div class="progress-percent">' + bio.skillProgress[bio.skills[i]] + 
+	 				 '"><div class="progress-percent">' + bio.skillProgress[bio.skills[i]] +
 	 				 '%</div><div class="progress-bar" style="width:' + bio.skillProgress[bio.skills[i]] + '%" ></div></li>');
 	 			};
 			};
@@ -62,8 +62,8 @@ var bio = {
 		$('#footerContacts:last').append(HTMLemail.replace("%data%", bio.contacts.email));
 		$('#footerContacts:last').append(HTMLtwitter.replace("%data%", bio.contacts.github));
 		$('#footerContacts:last').append(HTMLgithub.replace("%data%", bio.contacts.twitter));
-		$('#footerContacts:last').append(HTMLlocation.replace("%data%", bio.contacts.location));	
-	}	
+		$('#footerContacts:last').append(HTMLlocation.replace("%data%", bio.contacts.location));
+	}
 }
 
 bio.display();
@@ -202,6 +202,6 @@ function overlay(x) {
 //Close modal window and remove project divs to prepare for clicking a different project
 function overlayclose() {
   $('#project-modal').css('visibility', 'hidden');
-  $('#main').removeClass("blur"); 
+  $('#main').removeClass("blur");
   $("div.modal-entry").remove();
 }
